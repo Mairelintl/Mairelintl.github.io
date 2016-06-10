@@ -1,0 +1,83 @@
+nav,body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1030px;
+    margin: 0 auto;
+     
+}
+#container-fluid{
+    display: inline-block;
+}
+
+#encabezado-mujerhoy{
+    height: 190px;
+    background-color: lightpink;
+    border: 0.4px solid lightgray;
+     
+}
+.letter-mujerhoy{
+    text-decoration: none;
+    font-size: 6em;
+    font-family: cursive;
+    color: azure;
+    text-align: center;
+    display: block;
+}
+.letter-mujerhoy abbr{
+    cursor: inherit;
+    border-bottom: 1px dotted darkgray;
+}
+.inicia-sesión {
+    background: white;
+    color: darkgrey;
+    margin: 0.2;
+    float: right;   
+}
+
+nav{
+    height:120;
+    display: flex;
+    border-bottom: 1px dotted lightgray;
+    padding-bottom: 3px;
+}
+#menu li ul{
+ display: block;
+    
+}
+#menu li{
+   display: inline-flex;
+   
+   
+}
+#menu li a{
+    text-align-last: none;
+    text-decoration: none;
+    color: chocolate;
+}
+#menu>ul>li>a{
+    padding: 10px;
+    transition: 0.3s;
+    align-content: center;
+}
+#menu>ul>li>a:hover{
+    background-color: lightpink;
+    
+   
+}
+#contenido-moda{
+    height: 300px;
+    background-color: burlywood;
+    margin: 20px 0;
+}
+#tips-moda{
+    height: 400px;
+    background: pink;
+}
+#pie-horoscopos{
+    height: 70px;
+    background: burlywood;
+    
+    
+}
