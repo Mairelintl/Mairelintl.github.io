@@ -1,83 +1,134 @@
-nav,body{
-    margin: 0;
+h1,figure,p{
+    margin:0;
     padding: 0;
 }
-.container{
-    width: 1030px;
+.container-fluid{
+    margin-top: auto;
+    width: 100%;
+    background-image: url('../images/fondo-pagina.jpg');
+    background-size:cover;
+            }
+#navbar{
+    width: 50%;
+    height: 50px;
     margin: 0 auto;
-     
-}
-#container-fluid{
+   background:pink;
+    font-size: 1.1em;
+    font-family: cursive;
     display: inline-block;
+   position: fixed;
+    margin-left: 23%;
+    margin-right: 10px;
+    
+}
+    
+#navbar li ul{
+ display: flex;
+    
+}
+#navbar li{
+   display: inline-flex;
+   
+}
+#navbar li a{
+    text-align-last: none;
+    text-decoration: none;
+    color: black;
+}
+#navbar>ul>li>a{
+    margin-left: 45px;
+    transition: 0.3s;
+   text-align: center;
+}
+#navbar>ul>li>a:hover{
+    background-color: white;   
+}
+#encabezado-mujerhoy{
+    height: 100px;
+    background: white;
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 10%;
+    display: inline-block;
+    
 }
 
-#encabezado-mujerhoy{
-    height: 190px;
-    background-color: lightpink;
-    border: 0.4px solid lightgray;
-     
+.sombra{
+    box-shadow: 3px 0px 6px darkgray;
 }
+
 .letter-mujerhoy{
     text-decoration: none;
-    font-size: 6em;
+    font-size: 4.3em;
     font-family: cursive;
-    color: azure;
+    color: black;
     text-align: center;
     display: block;
 }
+
 .letter-mujerhoy abbr{
     cursor: inherit;
     border-bottom: 1px dotted darkgray;
 }
-.inicia-sesión {
+.inicia-sesión:hover {
     background: white;
-    color: darkgrey;
-    margin: 0.2;
-    float: right;   
+    color: black; 
+    transition: 0.5;
+    display: block;
+    
 }
 
-nav{
-    height:120;
+#tips-secundarios{
+    height: 500px;
+    width: 80%;
     display: flex;
-    border-bottom: 1px dotted lightgray;
-    padding-bottom: 3px;
+    margin-left: 10%;
+    margin-top: 50px;
+    background:white;
 }
-#menu li ul{
- display: block;
-    
+#busqueda{
+    margin-left: 8.7%;
 }
-#menu li{
-   display: inline-flex;
-   
-   
+
+.flexible{
+    display: block;
 }
-#menu li a{
-    text-align-last: none;
+.titulo-tip{
+    font-size: 1.5em;
+    line-height: 0.9;
+    font-variant: small-caps;
+   text-align-last: none;
+}
+.anti-arrugas a{
     text-decoration: none;
-    color: chocolate;
+    color: black;
+    display: inline-flex;
+    font-family: sans-serif;
 }
-#menu>ul>li>a{
-    padding: 10px;
-    transition: 0.3s;
-    align-content: center;
+.intro-tip img{
+    text-align: right;
+    display: flex;
+    /*font-size:  1.1em;*/
+    margin: 10px 0;
+    font-family: sans-serif;
 }
-#menu>ul>li>a:hover{
-    background-color: lightpink;
-    
+.cuerpo-tip{
+ text-align: left;
+}
+figure img{
+  margin-left: 180px;
+}
+
+#tip-importante{
+    height: 280px;
    
 }
-#contenido-moda{
-    height: 300px;
-    background-color: burlywood;
-    margin: 20px 0;
-}
-#tips-moda{
-    height: 400px;
-    background: pink;
-}
-#pie-horoscopos{
-    height: 70px;
-    background: burlywood;
+#publicidad{
+    height: 130px;
+   
     
+}
+#horoscopos{
+    height: 80px;
     
 }
