@@ -12,7 +12,7 @@ h1,figure,p{
     width: 50%;
     height: 50px;
     margin: 0 auto;
-   background:pink;
+   background:white;
     font-size: 1.1em;
     font-family: cursive;
     display: inline-block;
@@ -41,11 +41,11 @@ h1,figure,p{
    text-align: center;
 }
 #navbar>ul>li>a:hover{
-    background-color: white;   
+    background-color: pink;   
 }
 #encabezado-mujerhoy{
     height: 100px;
-    background: white;
+    background: pink;
     width: 80%;
     margin-top: 60px;
     margin-left: 10%;
@@ -61,7 +61,7 @@ h1,figure,p{
     text-decoration: none;
     font-size: 4.3em;
     font-family: cursive;
-    color: black;
+    color: white;
     text-align: center;
     display: block;
 }
@@ -70,15 +70,19 @@ h1,figure,p{
     cursor: inherit;
     border-bottom: 1px dotted darkgray;
 }
-.inicia-sesión:hover {
-    background: white;
+.inicia-sesión{
+    background: lightgray;
     color: black; 
-    transition: 0.5;
     display: block;
+    font-family: sans-serif;
     
 }
+.inicia-sesión:hover{
+    transition: 0.3s;
+    background: white;
+}
 
-#tips-secundarios{
+#tip-importante{
     height: 500px;
     width: 80%;
     display: flex;
@@ -91,44 +95,141 @@ h1,figure,p{
 }
 
 .flexible{
-    display: block;
+    display: flex;
 }
 .titulo-tip{
     font-size: 1.5em;
     line-height: 0.9;
     font-variant: small-caps;
+    justify-content: center;
    text-align-last: none;
+    margin-left: 95px;
 }
 .anti-arrugas a{
     text-decoration: none;
     color: black;
-    display: inline-flex;
+    display: flex;
     font-family: sans-serif;
 }
-.intro-tip img{
-    text-align: right;
-    display: flex;
+.intro-tip p{
+    text-align: center;
+    display: block;
     /*font-size:  1.1em;*/
     margin: 10px 0;
     font-family: sans-serif;
 }
 .cuerpo-tip{
- text-align: left;
+ text-align: center;
+    
 }
-figure img{
+figure {
   margin-left: 180px;
+ 
 }
 
-#tip-importante{
-    height: 280px;
-   
+#tips-secundarios{
+    min-height: 300px;
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+.imagen-tips-secundarios {
+   display: inline-flex;
+    margin-right: 10px;
+
+}
+.imagen {
+        border: 10px solid white;
+     box-shadow: 3px 0px 6px darkgray;
+}
+
+.elige-estilo{
+    background-color: cornsilk;
+    margin-bottom: 300px;
+   font-family: cursive;
+    margin-left: -160px;
+    margin-top: 25px;
+     box-shadow: 3px 0px 6px darkgray;
 }
 #publicidad{
-    height: 130px;
+    height: 400px;
+    width:40%;
+    display:flex;
+    float: right;
+    margin-right: 10%;
+    background: white;
+}
+.como-vestirte{
+    font-family: sans-serif;
+    color: brown;
+  text-align: justify;
+      margin-left: 20px;
+    
+}
+#publicidad p{
+    margin-top: 70px;
+    text-align: center;
+    margin-left: -90px;
+   font-family: sans-serif;
+    font-size: 1em;
+}
    
-    
-}
+ 
+
 #horoscopos{
-    height: 80px;
+    margin-left:10%;
+    height: 400px;
+    width: 30%;
+    background: white;
+    display: block;
     
 }
+#horoscopos a{
+    display: inline-flex;
+   margin-left: 18px;
+}
+#pie{
+    width: 80%;
+    margin-left: 10%;
+    height: 100px;
+    margin-top:10px;
+    background: white;
+    background-image: url('/images/logo-de-moda.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+     border-style: dotted;
+}
+#redes-sociales{
+    text-align: center;
+    
+}
+.facebook, .twitter{
+    width: 33px;
+    height: 33px;
+    display: block;
+    text-indent: -9999px;
+}
+.facebook{
+    background: url('../images/facebook_twitter.png')0 0;
+    
+}
+.twitter{
+    background: url('../images/facebook_twitter.png') -43px 0;    
+}
+.facebook:hover{
+    background:  url('../images/facebook_twitter.png') 0 -43px;
+    
+}
+.twitter:hover{
+    background:  url('../images/facebook_twitter.png') -43px -43px;
+    }
+.p-mujer{
+    display:inline-block; 
+    position: absolute;
+    color: deeppink;
+    
+}
+
+
+
