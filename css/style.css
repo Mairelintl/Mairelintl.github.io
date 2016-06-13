@@ -19,6 +19,7 @@ body {
     position: fixed;
     text-align: center;
     margin-top: -80px;
+    z-index: 1000;
 }
 
 #navbar>ul {
@@ -27,11 +28,12 @@ body {
 }
 
 #navbar li ul {
-    display: flex;
+    display: block;
 }
 
 #navbar li {
     display: inline-flex;
+    text-decoration: underline;
 }
 
 #navbar li a {
@@ -56,6 +58,7 @@ body {
     height: 100px;
     background: pink;
     margin-top: 80px;
+    
 }
 
 .sombra {
@@ -76,25 +79,11 @@ body {
     border-bottom: 1px dotted darkgray;
 }
 
-.inicia-sesión {
-    background: lightgray;
-    color: black;
-    display: block;
-    font-family: sans-serif;
-}
-
-.inicia-sesión:hover {
-    transition: 0.3s;
-    background: white;
-}
-
 #tip-importante {
     height: 500px;
-    width: 80%;
-    display: flex;
-    margin-left: 10%;
-    margin-top: 50px;
+    width: 960px;;
     background: white;
+    margin: auto;
 }
 
 #busqueda {
@@ -103,6 +92,7 @@ body {
 
 .flexible {
     display: flex;
+    margin-top: 10px;
 }
 
 .titulo-tip {
@@ -120,7 +110,9 @@ body {
     display: flex;
     font-family: sans-serif;
 }
-
+.arrugas{
+    margin-left: 33%;
+}
 .intro-tip p {
     text-align: center;
     display: block;
@@ -133,43 +125,35 @@ body {
     text-align: center;
 }
 
-figure {
-    margin-left: 180px;
-}
-
 #tips-secundarios {
-    min-height: 300px;
-    width: 80%;
-    display: flex;
-    margin-left: 10%;
-    margin-top: 40px;
+    min-height:400px;
+    display: block;  
 }
 
 .imagen-tips-secundarios {
-    display: inline-flex;
-    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+}
+.imagen{
+   border: 7px solid white; 
 }
 
-.imagen {
-    border: 10px solid white;
-    box-shadow: 3px 0px 6px darkgray;
-}
+
 
 .elige-estilo {
     background-color: cornsilk;
-    margin-bottom: 300px;
-    font-family: cursive;
-    margin-left: -160px;
-    margin-top: 25px;
-    box-shadow: 3px 0px 6px darkgray;
+    font-family: "PT Sans Narrow";
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    padding: 1.5px;
+    
 }
-
-#publicidad {
+#anuncios {
     height: 400px;
-    width: 40%;
-    display: flex;
+    width:560px;
     float: right;
-    margin-right: 10%;
     background: white;
 }
 
@@ -180,30 +164,22 @@ figure {
     margin-left: 20px;
 }
 
-#publicidad p {
-    margin-top: 70px;
-    text-align: center;
-    margin-left: -90px;
+#anuncios p {
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
 }
-
 #horoscopos {
-    margin-left: 10%;
     height: 400px;
-    width: 30%;
+    width: 400px;
     background: white;
-    display: block;
 }
 
 #horoscopos a {
-    display: inline-flex;
     margin-left: 18px;
 }
-
 #pie {
-    width: 80%;
-    margin-left: 10%;
+    width: 960px;
+    margin: auto;
     height: 100px;
     margin-top: 10px;
     background: white;
