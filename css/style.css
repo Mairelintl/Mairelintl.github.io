@@ -1,63 +1,68 @@
-h1,figure,p{
-    margin:0;
+h1,figure,p,body,ul,li {
+    margin: 0;
     padding: 0;
 }
-.container-fluid{
-    margin-top: auto;
-    width: 100%;
+
+body {
     background-image: url('../images/fondo-pagina.jpg');
-    background-size:cover;
-            }
-#navbar{
-    width: 50%;
-    height: 50px;
-    margin: 0 auto;
-   background:white;
+    background-size: cover;
+}
+.container-fluid {
+    width: 100%;
+}
+
+#navbar {
+    width: 960px;
+    background: white;
     font-size: 1.1em;
-    font-family: cursive;
-    display: inline-block;
-   position: fixed;
-    margin-left: 23%;
-    margin-right: 10px;
-    
+    font-family: "PT Sans Narrow";
+    position: fixed;
+    text-align: center;
+    margin-top: -80px;
 }
-    
-#navbar li ul{
- display: flex;
-    
+
+#navbar>ul {
+    display: flex;
+    justify-content: center;
 }
-#navbar li{
-   display: inline-flex;
-   
+
+#navbar li ul {
+    display: flex;
 }
-#navbar li a{
+
+#navbar li {
+    display: inline-flex;
+}
+
+#navbar li a {
     text-align-last: none;
     text-decoration: none;
     color: black;
-}
-#navbar>ul>li>a{
-    margin-left: 45px;
-    transition: 0.3s;
-   text-align: center;
-}
-#navbar>ul>li>a:hover{
-    background-color: pink;   
-}
-#encabezado-mujerhoy{
-    height: 100px;
-    background: pink;
-    width: 80%;
-    margin-top: 60px;
-    margin-left: 10%;
-    display: inline-block;
-    
+    padding: 20px;
+    cursor: pointer;
 }
 
-.sombra{
+#navbar>ul>li>a {
+    transition: 0.3s;
+    text-align: center;
+}
+
+#navbar>ul>li>a:hover {
+    background-color: pink;
+    /* subrayar o cambiar color de letra*/
+}
+
+#encabezado-mujerhoy {
+    height: 100px;
+    background: pink;
+    margin-top: 80px;
+}
+
+.sombra {
     box-shadow: 3px 0px 6px darkgray;
 }
 
-.letter-mujerhoy{
+.letter-mujerhoy {
     text-decoration: none;
     font-size: 4.3em;
     font-family: cursive;
@@ -66,170 +71,182 @@ h1,figure,p{
     display: block;
 }
 
-.letter-mujerhoy abbr{
+.letter-mujerhoy abbr {
     cursor: inherit;
     border-bottom: 1px dotted darkgray;
 }
-.inicia-sesión{
+
+.inicia-sesión {
     background: lightgray;
-    color: black; 
+    color: black;
     display: block;
     font-family: sans-serif;
-    
 }
-.inicia-sesión:hover{
+
+.inicia-sesión:hover {
     transition: 0.3s;
     background: white;
 }
 
-#tip-importante{
+#tip-importante {
     height: 500px;
     width: 80%;
     display: flex;
     margin-left: 10%;
     margin-top: 50px;
-    background:white;
+    background: white;
 }
-#busqueda{
+
+#busqueda {
     margin-left: 8.7%;
 }
 
-.flexible{
+.flexible {
     display: flex;
 }
-.titulo-tip{
+
+.titulo-tip {
     font-size: 1.5em;
     line-height: 0.9;
     font-variant: small-caps;
     justify-content: center;
-   text-align-last: none;
+    text-align-last: none;
     margin-left: 95px;
 }
-.anti-arrugas a{
+
+.anti-arrugas a {
     text-decoration: none;
     color: black;
     display: flex;
     font-family: sans-serif;
 }
-.intro-tip p{
+
+.intro-tip p {
     text-align: center;
     display: block;
     /*font-size:  1.1em;*/
     margin: 10px 0;
     font-family: sans-serif;
 }
-.cuerpo-tip{
- text-align: center;
-    
-}
-figure {
-  margin-left: 180px;
- 
+
+.cuerpo-tip {
+    text-align: center;
 }
 
-#tips-secundarios{
+figure {
+    margin-left: 180px;
+}
+
+#tips-secundarios {
     min-height: 300px;
     width: 80%;
     display: flex;
     margin-left: 10%;
     margin-top: 40px;
 }
+
 .imagen-tips-secundarios {
-   display: inline-flex;
+    display: inline-flex;
     margin-right: 10px;
-
 }
+
 .imagen {
-        border: 10px solid white;
-     box-shadow: 3px 0px 6px darkgray;
+    border: 10px solid white;
+    box-shadow: 3px 0px 6px darkgray;
 }
 
-.elige-estilo{
+.elige-estilo {
     background-color: cornsilk;
     margin-bottom: 300px;
-   font-family: cursive;
+    font-family: cursive;
     margin-left: -160px;
     margin-top: 25px;
-     box-shadow: 3px 0px 6px darkgray;
+    box-shadow: 3px 0px 6px darkgray;
 }
-#publicidad{
+
+#publicidad {
     height: 400px;
-    width:40%;
-    display:flex;
+    width: 40%;
+    display: flex;
     float: right;
     margin-right: 10%;
     background: white;
 }
-.como-vestirte{
+
+.como-vestirte {
     font-family: sans-serif;
     color: brown;
-  text-align: justify;
-      margin-left: 20px;
-    
+    text-align: justify;
+    margin-left: 20px;
 }
-#publicidad p{
+
+#publicidad p {
     margin-top: 70px;
     text-align: center;
     margin-left: -90px;
-   font-family: sans-serif;
+    font-family: sans-serif;
     font-size: 1em;
 }
-   
- 
 
-#horoscopos{
-    margin-left:10%;
+#horoscopos {
+    margin-left: 10%;
     height: 400px;
     width: 30%;
     background: white;
     display: block;
-    
 }
-#horoscopos a{
+
+#horoscopos a {
     display: inline-flex;
-   margin-left: 18px;
+    margin-left: 18px;
 }
-#pie{
+
+#pie {
     width: 80%;
     margin-left: 10%;
     height: 100px;
-    margin-top:10px;
+    margin-top: 10px;
     background: white;
     background-image: url('/images/logo-de-moda.jpg');
     background-repeat: no-repeat;
     background-position: center;
-     border-style: dotted;
+    border-style: dotted;
 }
-#redes-sociales{
+
+#redes-sociales {
     text-align: center;
-    
 }
-.facebook, .twitter{
+
+.facebook,
+.twitter {
     width: 33px;
     height: 33px;
     display: block;
     text-indent: -9999px;
 }
-.facebook{
+
+.facebook {
     background: url('../images/facebook_twitter.png')0 0;
-    
 }
-.twitter{
-    background: url('../images/facebook_twitter.png') -43px 0;    
+
+.twitter {
+    background: url('../images/facebook_twitter.png') -43px 0;
 }
-.facebook:hover{
-    background:  url('../images/facebook_twitter.png') 0 -43px;
-    
+
+.facebook:hover {
+    background: url('../images/facebook_twitter.png') 0 -43px;
 }
-.twitter:hover{
-    background:  url('../images/facebook_twitter.png') -43px -43px;
-    }
-.p-mujer{
-    display:inline-block; 
+
+.twitter:hover {
+    background: url('../images/facebook_twitter.png') -43px -43px;
+}
+
+.p-mujer {
+    display: inline-block;
     position: absolute;
     color: deeppink;
-    
 }
-
-
-
+.container {
+    width: 960px;
+    margin: auto;
+}
